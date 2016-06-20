@@ -9,12 +9,12 @@ result = add(5, 6)
 puts (result)
 
 def join_strings (a, b)
-	a + b
+	a + " " + b
 end
 
 
 
-new_string = join_strings("Hello", " Master!")
+new_string = join_strings("Hello", "Master!")
 
 puts(new_string)
 
@@ -28,11 +28,11 @@ def full_name(first_name, last_name, title)
   	#this is defining a variable, that doesnt currently have a value
 
   if title && first_name && last_name 
-  # a condition that will only run if all 3 requirements are met
+  # a condition that only runs when the user enters their title, first_name, and last_name.
     name = title + " " + first_name + " " + last_name
     # if true, this will set the variable 'name' to be title, first_name and last_name, with a space between each
   elsif title && last_name 
-  # a condition that will run with just a title and las_name
+  # a condition that will run with just a title and last_name
     name = title + " " + last_name
     # if the above is true will set name to be title and last_name with a space
   elsif first_name && last_name
